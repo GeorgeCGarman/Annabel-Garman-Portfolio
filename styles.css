@@ -1,0 +1,157 @@
+.social-media {
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-media > i {
+  display: inline;
+  font-size: 3rem;
+  margin: 0 5%;
+}
+
+.social-media > i:hover {
+  color: grey;
+}
+
+nav {
+  position: sticky;
+  text-align: center;
+  top: 0;
+  background-color: white;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-size: 5em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+
+.bio, .contact {
+  padding: 0 10% 10% 10% ;
+}
+
+.bio > p, .contact > p {
+  width: 70%;
+}
+
+.title {
+  text-align: center;
+}
+
+nav ul {
+  padding: 1em 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  padding: 0 2em;
+}
+
+nav span {
+  position: relative;
+}
+
+nav span:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -.1em;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav span:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-button {
+  font-family: "Raleway", sans-serif;
+  background: none;
+  border: none;
+  position: relative;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+  }
+  nav li {
+    flex: 100%;
+    max-width: 100%;
+    padding-bottom: 2em;
+  }
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 20%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 40%;
+    max-width: 40%;
+  }
+
+  .title {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.profile-pic {
+  float: right;
+  background: grey;
+  width: 150px;
+  height: 150px;
+}
